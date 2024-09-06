@@ -4,7 +4,7 @@
     <style>
       @font-face {
         font-family: pixel;
-        src: url(Pixelify_Sans/PixelifySans-VariableFont_wght.ttf);
+        src: url(upheaval/upheavtt.ttf);
       }
     </style>
     <meta charset="UTF-8" />
@@ -14,19 +14,16 @@
   </head>
   <body>
     <div class="container">
-      <h1 style="font-size: 75px">Tic - Tac - Toe</h1>
+      <h1 style="font-size: 90px">Tic - Tac - Toe</h1>
       <div class="wrapper">
         <div class="player1S">
           <h1>Player 1</h1>
+          <a>Marker : X</a>
           <a>Score : 0</a>
-          <div>
-            <button class="choice">X</button>
-            <button class="choice">O</button>
-          </div>
         </div>
         <div class="board">
-          <button class="cell c1"></button>
-          <button class="cell c2"></button>
+          <button class="cell c1">X</button>
+          <button class="cell c2">O</button>
           <button class="cell c3"></button>
           <button class="cell c4"></button>
           <button class="cell c5"></button>
@@ -34,17 +31,14 @@
           <button class="cell c7"></button>
           <button class="cell c8"></button>
           <button class="cell c9"></button>
-          <button class="reset">Reset</button>
         </div>
         <div class="player2S">
           <h1>Player 2</h1>
+          <a>Marker : O</a>
           <a>Score : 0</a>
-          <div>
-            <button class="choice">X</button>
-            <button class="choice">O</button>
-          </div>
         </div>
       </div>
+      <button class="reset">Reset</button>
     </div>
     <script src="back.js"></script>
   </body>
