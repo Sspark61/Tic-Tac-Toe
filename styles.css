@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: pixel;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.wrapper {
+  display: flex;
+  margin-top: 50px;
+  width: 80%;
+  height: 40vh;
+  justify-content: center;
+  gap: 400px;
+}
+
+.player1S,
+.player2S {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.player1S > h1, .player2S > h1{
+    font-size: 50px;
+}
+
+.player1S > a, .player2S > a{
+    font-size: 40px;
+}
+
+.choice{
+    height: 40px;
+    width: 100px;
+    font-size: 30px;
+    background-color: transparent;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(5, 100px);
+  margin-top: 50px;
+}
+
+.reset{
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: transparent;
+    font-size: 60px;
+}
+
+.cell {
+  font-size: 80px;
+  background-color: transparent;
+  border: 3px solid #27272a;
+}
+
+.c1,
+.c2,
+.c3 {
+  border-top: none;
+}
+
+.c3,
+.c6,
+.c9 {
+  border-right: none;
+}
+
+.c1,
+.c4,
+.c7 {
+  border-left: none;
+}
+
+.c7,
+.c8,
+.c9 {
+  border-bottom: none;
+}
