@@ -19,26 +19,30 @@
         <div class="player1S">
           <h1>Player 1</h1>
           <a>Marker : X</a>
-          <a>Score : 0</a>
+          <a class="score1">Score : 0</a>
         </div>
         <div class="board">
-          <button class="cell c1">X</button>
-          <button class="cell c2">O</button>
-          <button class="cell c3"></button>
-          <button class="cell c4"></button>
-          <button class="cell c5"></button>
-          <button class="cell c6"></button>
-          <button class="cell c7"></button>
-          <button class="cell c8"></button>
-          <button class="cell c9"></button>
+          <button cellindex="0" class="cell c1"></button>
+          <button cellindex="1" class="cell c2"></button>
+          <button cellindex="2" class="cell c3"></button>
+          <button cellindex="3" class="cell c4"></button>
+          <button cellindex="4" class="cell c5"></button>
+          <button cellindex="5" class="cell c6"></button>
+          <button cellindex="6" class="cell c7"></button>
+          <button cellindex="7" class="cell c8"></button>
+          <button cellindex="8" class="cell c9"></button>
         </div>
         <div class="player2S">
           <h1>Player 2</h1>
           <a>Marker : O</a>
-          <a>Score : 0</a>
+          <a class="score2">Score : 0</a>
         </div>
       </div>
-      <button class="reset">Reset</button>
+      <div class="btns">
+        <button class="reset">Reset</button>
+        <button class="resetscore">Reset Score</button>
+      </div>
+      <div class="hidden status"></div>
     </div>
     <script src="back.js"></script>
   </body>
